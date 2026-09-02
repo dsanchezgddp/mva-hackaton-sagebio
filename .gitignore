@@ -1,0 +1,33 @@
+# ==========================================================
+#  DATOS DEL PACIENTE — NUNCA SUBIR A GITHUB
+#  Datos clinicos reales de un menor. Confidencial.
+#  Borrado obligatorio: 30 dias tras el 24-oct-2026 (= 23-nov-2026)
+# ==========================================================
+data/
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.fastq
+*.fastq.gz
+*.bam
+*.cram
+*.docx
+*.opdownload
+
+# Nada de identificadores de muestra ni del proband en el repo
+*WGS_*
+*PROBAND*
+panel_variants*
+panel_annotated*
+AF-*.pdb
+
+# Secretos
+.env
+*token*
+.hf_token
+
+# Ruido
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
